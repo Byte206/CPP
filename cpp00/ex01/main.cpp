@@ -16,11 +16,17 @@
 
 using namespace std;
 
-int main()
+int main(int argc, char **argv)
 {
     PhoneBook phoneBook;
     string command;
 
+    (void)argv;
+    if (argc != 1)
+    {
+        cout << "Usage: ./phonebook" << endl;
+        return 1;
+    }
     cout << "Welcome to your PhoneBook!" << endl;
     cout << "Available commands: ADD, SEARCH, EXIT" << endl;
 

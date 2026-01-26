@@ -16,7 +16,7 @@
 // Setters
 void Contact::setFirstName(const std::string &firstName)
 {
-    _firstName = firstName;
+    this->firstName = firstName;
 }
 
 void Contact::setLastName(const std::string &lastName)

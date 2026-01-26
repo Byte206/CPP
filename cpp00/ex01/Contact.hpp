@@ -18,7 +18,7 @@
 class Contact
 {
 private:
-    std::string _firstName;
+    std::string firstName;
     std::string lastName;
     std::string nickname;
     std::string phoneNumber;
