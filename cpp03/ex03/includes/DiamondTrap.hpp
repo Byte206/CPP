@@ -6,7 +6,7 @@
 
 class DiamondTrap : public FragTrap, public ScavTrap {
    private:
-    std::string name;  // Matching ClapTrap's attribute name
+    std::string name;
 
    public:
     DiamondTrap();
