@@ -1,5 +1,5 @@
 #include "../includes/Bureaucrat.hpp"
-#include "../includes/AForm.hpp"
+#include "../includes/Form.hpp"
 
 Bureaucrat::Bureaucrat() : name("Default"), grade(150) {
     std::cout << "Bureaucrat " << name << " constructed via default." << std::endl;
@@ -55,7 +55,7 @@ void Bureaucrat::decrementGrade() {
     std::cout << "Bureaucrat " << name << " decremented to grade " << grade << "." << std::endl;
 }
 
-void Bureaucrat::signForm(AForm &f) {
+void Bureaucrat::signForm(Form &f) {
     try {
         f.beSigned(*this);
         std::cout << name << " signed " << f.getName() << std::endl;
