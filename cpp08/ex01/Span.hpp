@@ -15,16 +15,9 @@ public:
 
 	void			addNumber(int n);
 
-	// Add a range of numbers via iterators
+	// add a range of numbers via iterators
 	template <typename Iterator>
-	void			addRange(Iterator first, Iterator last)
-	{
-		while (first != last)
-		{
-			addNumber(*first);
-			++first;
-		}
-	}
+	void			addRange(Iterator first, Iterator last);
 
 	int				shortestSpan() const;
 	int				longestSpan() const;

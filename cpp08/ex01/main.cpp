@@ -5,7 +5,7 @@
 
 int main()
 {
-	// Subject test
+	// subject test
 	{
 		Span sp(5);
 		sp.addNumber(6);
@@ -18,7 +18,7 @@ int main()
 		std::cout << "Longest:  " << sp.longestSpan()  << std::endl;
 	}
 
-	// Exceptions
+	// exceptions
 	{
 		std::cout << "\n-- Exceptions --" << std::endl;
 		Span sp(1);

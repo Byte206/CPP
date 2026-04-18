@@ -1,5 +1,18 @@
 #include "Span.hpp"
 
+template <typename Iterator>
+void Span::addRange(Iterator first, Iterator last)
+{
+	while (first != last)
+	{
+		addNumber(*first);
+		++first;
+	}
+}
+
+template void Span::addRange<std::vector<int>::iterator>(std::vector<int>::iterator first, std::vector<int>::iterator last);
+template void Span::addRange<std::vector<int>::const_iterator>(std::vector<int>::const_iterator first, std::vector<int>::const_iterator last);
+
 Span::Span(unsigned int n) : _max(n) {}
 
 Span::Span(const Span &other) : _max(other._max), _numbers(other._numbers) {}
