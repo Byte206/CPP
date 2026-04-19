@@ -31,7 +31,7 @@ int main()
 
 	// addRange + large test
 	{
-		std::cout << "\n-- Large test (10,000 numbers) --" << std::endl;
+		std::cout << "\n-- Large test (10,000 numbers) with addRange --" << std::endl;
 		srand(42);
 		std::vector<int> big(10000);
 		for (int i = 0; i < 10000; ++i)
